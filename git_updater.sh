@@ -21,7 +21,7 @@ if [ -n "$1" ]; then
 	GIT_VERSION=$1
 else
 	# matches: <a href="http://www.kernel.org/pub/software/scm/git/docs/RelNotes-1.5.5.1.txt">
-    GIT_VERSION=`curl git.or.cz 2> /dev/null | sed -n 's/.*-\(.*\).txt.*/\1/p'`
+    GIT_VERSION=`curl "http://git-scm.com" 2> /dev/null | sed -n 's/.*-\(.*\).txt.*/\1/p'`
     echo "Current version expected to be $GIT_VERSION"
     echo "Is this is incorrect, press CTRL-C NOW!"
     sleep 5

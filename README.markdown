@@ -1,4 +1,4 @@
-## git_updater
+## gitupdater
 `git_updater.sh` is a script to automate the process of updating git. It will try to find out from git.or.cz what the latest version is and download git and the manpages. The tarballs are checked using [GPG][] and the script will stop if the verification fails.
 
 ### Requirements
